@@ -1,0 +1,24 @@
+{
+  "name": "notespace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nibezo/notespace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nibezo/notespace/issues"
+  },
+  "homepage": "https://github.com/nibezo/notespace#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.1.4"
+  }
+}
