@@ -12,15 +12,32 @@ const App = () => {
     <div className="app">
       <div className="input-element-wrapper">
         <input
+          className="login-field"
+          type="text"
+          placeholder="login"
+          autoComplete="off"
+        ></input>
+      </div>
+
+      <div className="input-element-wrapper">
+        <input
           className="password-field"
-          type={state ? "text" : "password"}
+          type={state ? 'text' : 'password'}
           placeholder="password"
-          autoComplete='off'
+          autoComplete="off"
         ></input>
         <button className="btn" onClick={toggleBtn}>
-          <img src={state ? require('./img/open-eye.png') : require('./img/close-eye.png') } />
+          <img
+            src={
+              state
+                ? require('./img/open-eye.png')
+                : require('./img/close-eye.png')
+            }
+          />
         </button>
       </div>
+
+      <button className="btn-login">sign up / log in</button>
     </div>
   );
 };
