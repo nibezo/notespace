@@ -1,0 +1,49 @@
+.app {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+img {
+  height: 44px;
+}
+
+.input-element-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-field {
+  color: #5F93F9;
+  border-color: #5F93F9;
+  border: 1px solid;
+  width: 800px;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 2rem;
+  padding-right: 2.8rem;
+  margin-left: -3rem;
+  text-align: center;
+}
+
+.password-field:focus {
+  outline: none;
+  border: 1px solid #5F93F9;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5F93F9;
+  opacity: 1; /* Firefox */
+  text-align: center;
+}
+
+.btn {
+  padding: 0.6rem;
+  margin-top: 0.1rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: -6.75rem;
+  cursor: pointer;
+}
