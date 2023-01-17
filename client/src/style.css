@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'helvetica';
-  src: url('https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf')
-      format('woff'),
-    url('https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf')
-      format('opentype'),
-    url('https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf')
-      format('truetype');
-}
-
 * {
   font-family: 'helvetica';
 }
@@ -36,8 +26,8 @@ img {
   height: 100px;
   border-radius: 15px;
   font-size: 2.25rem;
-  padding-right: 2.8rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 2.8rem;
   margin-bottom: 45px;
 }
 
@@ -49,9 +39,8 @@ img {
   height: 100px;
   border-radius: 15px;
   font-size: 2.25rem;
-  padding-right: 2.8rem;
+  padding-left: 2.8rem;
   margin-left: -3rem;
-  text-align: center;
 }
 
 .password-field:focus,
@@ -117,5 +106,14 @@ img {
   0% {
     background-color: #a4c8ff;
     color: white;
+  }
+}
+
+@media (max-width: 900px) {
+  .btn-login,
+  .login-field,
+  .password-field {
+    width: 300px;
+    height: 70px;
   }
 }

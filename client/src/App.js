@@ -16,6 +16,7 @@ const App = () => {
           type="text"
           placeholder="login"
           autoComplete="off"
+          maxLength="13"
         ></input>
       </div>
 
@@ -25,9 +26,11 @@ const App = () => {
           type={state ? 'text' : 'password'}
           placeholder="password"
           autoComplete="off"
+          maxLength="16"
         ></input>
         <button className="btn" onClick={toggleBtn}>
           <img
+            alt='eye'
             src={
               state
                 ? require('./img/open-eye.png')
