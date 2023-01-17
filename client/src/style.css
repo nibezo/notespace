@@ -127,4 +127,7 @@ img {
   .password-field {
     margin-left: -2rem;
   }
+  img {
+    height: 34px;
+  }
 }
