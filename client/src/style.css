@@ -53,7 +53,7 @@ img {
 ::placeholder {
   color: #5f93f9;
   opacity: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .btn {
