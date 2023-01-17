@@ -1,6 +1,7 @@
 import './style.css';
 import { useState } from 'react';
-let username, password = '';
+let username,
+  password = '';
 
 function getUsername(event) {
   username = event.target.value;
@@ -47,7 +48,7 @@ const LoginPage = () => {
         ></input>
         <button className="btn" onClick={toggleBtn}>
           <img
-            alt='eye'
+            alt="eye"
             src={
               state
                 ? require('./img/open-eye.png')
@@ -56,8 +57,11 @@ const LoginPage = () => {
           />
         </button>
       </div>
-
-      <button className="btn-login" onClick={loginUser}>sign up / log in</button>
+      <div className="input-element-wrapper">
+        <button className="btn-login" onClick={loginUser}>
+          sign up / log in
+        </button>
+      </div>
     </div>
   );
 };

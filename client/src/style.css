@@ -79,11 +79,10 @@ img {
   margin-top: 45px;
   cursor: pointer;
   animation: offbtn 0.5s ease both;
+  padding: 0;
 }
 
 .btn-login:hover {
-  color: white;
-  background-color: #a4c8ff;
   animation: onbtn 0.5s ease both;
 }
 
@@ -110,10 +109,22 @@ img {
 }
 
 @media (max-width: 900px) {
-  .btn-login,
+  * {
+    font-size: 12px;
+  }
   .login-field,
   .password-field {
-    width: 300px;
+    width: 500px;
     height: 70px;
+  }
+  .btn-login {
+    width: 537px;
+    height: 70px;
+  }
+  .login-field {
+    margin-left: 0rem;
+  }
+  .password-field {
+    margin-left: -2rem;
   }
 }
