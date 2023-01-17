@@ -1,7 +1,20 @@
 import './style.css';
 import { useState } from 'react';
+let username, password = '';
 
-const App = () => {
+function getUsername(event) {
+  username = event.target.value;
+}
+
+function getPassword(event) {
+  password = event.target.value;
+}
+
+function loginUser() {
+  console.log(`Login is ${username}, password is ${password}`);
+}
+
+const LoginPage = () => {
   const [state, setState] = useState(false);
 
   const toggleBtn = () => {
@@ -17,6 +30,8 @@ const App = () => {
           placeholder="login"
           autoComplete="off"
           maxLength="13"
+          spellCheck="false"
+          onInput={getUsername}
         ></input>
       </div>
 
@@ -27,6 +42,8 @@ const App = () => {
           placeholder="password"
           autoComplete="off"
           maxLength="16"
+          spellCheck="false"
+          onInput={getPassword}
         ></input>
         <button className="btn" onClick={toggleBtn}>
           <img
@@ -40,9 +57,9 @@ const App = () => {
         </button>
       </div>
 
-      <button className="btn-login">sign up / log in</button>
+      <button className="btn-login" onClick={loginUser}>sign up / log in</button>
     </div>
   );
 };
 
-export default App;
+export default LoginPage;

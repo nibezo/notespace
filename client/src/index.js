@@ -1,4 +1,13 @@
-import reactDom from 'react-dom';
-import App from './App';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-reactDom.render(<App />, document.getElementById('root'));
+import App from "./LoginPage";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
