@@ -1,5 +1,6 @@
 * {
   font-family: 'helvetica';
+  -webkit-tap-highlight-color: transparent;
 }
 
 .app {
@@ -80,6 +81,7 @@ img {
   cursor: pointer;
   animation: offbtn 0.5s ease both;
   padding: 0;
+  outline: none !important;
 }
 
 .btn-login:hover {
