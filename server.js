@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 app.use(express.static(path.join(__dirname, '../notespace/client/build')));
 
-app.get('/api', (req, res) => {
+app.get('/login', (req, res) => {
   res.json({message: "it's working. "})
 })
 
